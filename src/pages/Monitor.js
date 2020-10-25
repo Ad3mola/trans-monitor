@@ -4,6 +4,7 @@ import TransactionWrapper from "../components/TransactionWrapper";
 import { MonitorStyle } from "../styles/MonitorStyles";
 import ChartContainer from "../components/ChartContainer";
 import TransInfoWrapper from "../components/TransInfoWrapper";
+import TableHeader from "../components/TableHeader";
 
 function Monitor() {
   return (
@@ -18,6 +19,10 @@ function Monitor() {
           <TransInfoWrapper />
           </div>
         </div>
+      </div>
+      <div className="my-4">
+        <h2>Payments</h2>
+        <TableHeader />
       </div>
     </MonitorStyle>
   );
