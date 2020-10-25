@@ -33,7 +33,7 @@ export const MonitorStyle = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 40vh;
+    height: 100%;
     width: 100%;
     .col-md-2 {
       border-right: 1px solid #cfe8fb;

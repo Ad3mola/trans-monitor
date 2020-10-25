@@ -3,6 +3,7 @@ import React from "react";
 import TransactionWrapper from "../components/TransactionWrapper";
 import { MonitorStyle } from "../styles/MonitorStyles";
 import ChartContainer from "../components/ChartContainer";
+import TransInfoWrapper from "../components/TransInfoWrapper";
 
 function Monitor() {
   return (
@@ -14,7 +15,7 @@ function Monitor() {
             <ChartContainer />
           </div>
           <div className="col-md-4 pl-0">
-            cards
+          <TransInfoWrapper />
           </div>
         </div>
       </div>
