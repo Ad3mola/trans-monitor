@@ -7,11 +7,11 @@ export const MonitorStyle = styled.div`
   .dropdown-container {
     width: 168px;
     height: 100%;
-    border: 1px solid #dde0e3;
+    border: 1px solid ${(props) => props.theme.dropdownBorderColor};
     border-radius: 4.25px;
 
     .form-control {
-      color: #cccfd4;
+      color: ${(props) => props.theme.formTextColor};
       font-size: 0.9rem;
     }
   }
@@ -36,7 +36,7 @@ export const MonitorStyle = styled.div`
     height: 100%;
     width: 100%;
     .col-md-2 {
-      border-right: 1px solid #cfe8fb;
+      border-right: 1px solid ${(props) => props.theme.chartLines};
       height: 100%;
       &:last-child {
         border: 0;
@@ -79,7 +79,6 @@ export const MonitorStyle = styled.div`
       background: transparent;
     }
   }
-  
 `;
 export const TradesTableStyle = styled.div`
   .table-head {
@@ -143,21 +142,21 @@ export const TradesTableStyle = styled.div`
     font-size: 0.8rem;
   }
   .Reconciled {
-    color: #27ae60;
+    color: ${(props) => props.theme.reconciledColor};
     .dot {
-      background: #27ae60;
+      background: ${(props) => props.theme.reconciledColor};
     }
   }
   .Pending {
-    color: #ebc315;
+    color: ${(props) => props.theme.pendingColor};
     .dot {
-      background: #ebc315;
+      background: ${(props) => props.theme.pendingColor};
     }
   }
   .Un-reconciled {
-    color: #7f8fa4;
+    color: ${(props) => props.theme.unreconciledColor};
     .dot {
-      background: #7f8fa4;
+      background: ${(props) => props.theme.unreconciledColor};
     }
   }
 

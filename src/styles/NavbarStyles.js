@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const NavbarStyle = styled.div`
-  background: #ffffff;
+  background: ${(props) => props.theme.white};
   box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
   padding: 0.6em 0;
   .search-component {
     margin: 0;
   }
   .nav-item a {
-    color: black;
+    color: ${(props) => props.theme.navLinkColor};
   }
   .hello-text {
     font-size: 10px;
@@ -44,7 +44,7 @@ const NavbarStyle = styled.div`
       border-bottom: 1px solid black;
     }
     &::placeholder {
-      color: #787878;
+      color: ${props => props.theme.placeholderColor};
       font-size: 0.8rem;
     }
   }

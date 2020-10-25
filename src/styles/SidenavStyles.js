@@ -10,8 +10,8 @@ const SidenavStyle = styled.div`
     width: 100%;
   }
   .active {
-    background: rgba(24, 117, 240, 0.1);
-    border-left: 3px solid #1875f0;
+    background: ${(props) => props.theme.sideActiveBg};
+    border-left: 3px solid ${(props) => props.theme.sideActiveBorder};
   }
   .btn-container,
   .link,
@@ -19,7 +19,7 @@ const SidenavStyle = styled.div`
     padding-left: 2.6em;
   }
   .invoice-button {
-    background: #27ae60;
+    background: ${props => props.theme.invoiceBg};
     border-radius: 30px;
     width: 163px;
     height: 33px;
