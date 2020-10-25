@@ -5,6 +5,7 @@ import { MonitorStyle } from "../styles/MonitorStyles";
 import ChartContainer from "../components/ChartContainer";
 import TransInfoWrapper from "../components/TransInfoWrapper";
 import TableHeader from "../components/TableHeader";
+import TradesTable from "../components/TradesTable";
 
 function Monitor() {
   return (
@@ -24,6 +25,7 @@ function Monitor() {
         <h2>Payments</h2>
         <TableHeader />
       </div>
+      <TradesTable />
     </MonitorStyle>
   );
 }
