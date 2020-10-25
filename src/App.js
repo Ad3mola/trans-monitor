@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import GlobalStyle from "./theme/globalStyles";
 import lightTheme from "./theme/lightTheme";
+import Sidenav from "./components/Sidenav";
 
 function App() {
   return (
@@ -13,7 +14,12 @@ function App() {
       <div>
         <GlobalStyle />
         <Navbar />
-        hello world
+        <div className="row w-100 mx-auto app-container">
+          <div className="sidenav-container p-0">
+            <Sidenav />
+          </div>
+          <div className="main-page-container p-0">main page</div>
+        </div>
       </div>
     </ThemeProvider>
   );

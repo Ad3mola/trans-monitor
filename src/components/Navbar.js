@@ -102,6 +102,7 @@ function Navbar() {
               className="text-right d-flex justify-content-center align-items-center"
             >
               <div className="name">
+                <small>Hello</small>
                 <p className="m-0 username">OluwaLeke Ojo</p>
               </div>
 

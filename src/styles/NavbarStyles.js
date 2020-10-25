@@ -13,6 +13,9 @@ const NavbarStyle = styled.div`
   .hello-text {
     font-size: 10px;
   }
+  .name small {
+    font-size: 70%;
+  }
   .username {
     font-size: 14px;
   }

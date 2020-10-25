@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 } */
 body {
   margin: 0;
-  font-family: "Mulish", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family:  "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +28,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #b50543;
-  outline: 1px solid #b50543;
+  background-color: #7F8FA4;
+  outline: 1px solid #7F8FA4;
 }
 
 code {
