@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import GlobalStyle from "./theme/globalStyles";
 import lightTheme from "./theme/lightTheme";
 import Sidenav from "./components/Sidenav";
+import Monitor from "./pages/Monitor";
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
           <div className="sidenav-container p-0">
             <Sidenav />
           </div>
-          <div className="main-page-container p-0">main page</div>
+          <div className="main-page-container p-0">
+            <Switch>
+              <Route path="/" component={Monitor} />
+            </Switch>
+          </div>
         </div>
       </div>
     </ThemeProvider>
